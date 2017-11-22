@@ -1,0 +1,98 @@
+/* compileCompact: ../css/$1.css */
+
+form {
+	max-width: 450px;
+	width: 80vw;
+
+	font-size: 1rem;
+
+	font-weight: normal;
+}
+
+.fgroup {
+	margin: 15px 0;
+}
+
+textarea {
+	min-height: 150px;
+}
+
+input,
+textarea {
+	display: block;
+	outline: none;
+	transition: all .15s ease-in-out;
+	font-family: 'Helvetica', Arial, sans-serif;
+}
+
+input:not([type="submit"]),
+textarea:not([type="submit"]) {
+	font-size: 1em;
+	padding: 10px;
+	width:100%;
+
+	border: 1px solid transparent;
+}
+
+input:not([type="submit"]):focus,
+textarea:not([type="submit"]):focus {
+	border: 1px solid #0080ff;
+}
+
+input.is-invalid:not(:focus),
+textarea.is-invalid:not(:focus) {
+	border: 1px solid #FF0066;
+}
+
+input.is-valid:not(:focus),
+textarea.is-invalid:not(:focus) {
+	border: 1px solid #00FF90;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.hint {
+	display: block;
+	font-size: .6em;
+	color: gray;
+	margin:5px auto;
+}
+
+[type="submit"] {
+	font-size: inherit;
+	color: white;
+	background: #0080FF;
+	text-transform: uppercase;
+	cursor: pointer;
+	float: right;
+
+	border: none;
+
+	border-radius: 5px;
+
+	padding: 10px 14px;
+
+}
+
+[type="submit"]:disabled {
+	opacity: .2;
+	color: inherit;
+	background: gray;
+	cursor: not-allowed;
+}
+
+[type="submit"]:not(:disabled):hover {
+	background: #006EDB;
+}
+
+
+main {
+	background: #15120A
+}
+
+footer {
+	background: #15120A
+}
